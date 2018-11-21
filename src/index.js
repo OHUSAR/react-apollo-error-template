@@ -12,6 +12,7 @@ import App from "./App";
 const client = new ApolloClient({
   cache: new InMemoryCache(),
   link,
+  ssrForceFetchDelay: 500,
 });
 
 render(
